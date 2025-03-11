@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var StudentID=parseInt(prompt("Enter Student ID"));
+var StudentName=prompt("Enter Student Name")
+var m1=parseInt(prompt("enter Mark 1"));
+var m2=parseInt(prompt("enter Mark 2"));
+var m3=parseInt(prompt("enter Mark 3"));
+var m4=parseInt(prompt("enter Mark 4"));
+var m5=parseInt(prompt("enter Mark 5"));
+var total=m1+m2+m3+m4+m5;
+var percent=(total*100/500.0);
+document.write("Student id=:"+StudentID+"<br>");
+document.write("Student Name=:"+StudentName+"<br>");
+document.write("Total=:"+total+"<br>");
+document.write("Percentage=:"+percent+"<br>");
+if(percent>90)
+{
+alert("Grade A")
+}
+else if(percent>80 && percent<90)
+{
+    alert("Grade B")
+}
+else if(percent>70 && percent<80)
+{
+    alert("Grade C")
+}
+else if(percent>60 && percent<70)
+{
+    alert("Grade D")
+}
+else if(percent>50 && percent<60)
+{
+    alert("Grade E")
+}
+else{
+alert("fail")
+}
+</script>
+</body>
+</html>
